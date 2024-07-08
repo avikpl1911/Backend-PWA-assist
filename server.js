@@ -7,7 +7,7 @@ const admin = require('firebase-admin'); // Make sure you import admin
 const app = express();
 
 app.use(cors({
-  origin: 'http://localhost:3000', // Adjust this to match your frontend's origin
+  origin: 'https://frontend-pwa.onrender.com/', // Adjust this to match your frontend's origin
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type']
 }));
