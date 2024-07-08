@@ -6,11 +6,7 @@ const admin = require('firebase-admin'); // Make sure you import admin
 
 const app = express();
 
-app.use(cors({
-  origin: 'https://frontend-pwa.onrender.com/', // Adjust this to match your frontend's origin
-  methods: ['GET', 'POST'],
-  allowedHeaders: ['Content-Type']
-}));
+app.use(cors());
 app.use(bodyParser.json());
 
 const PORT = process.env.PORT || 5000;
